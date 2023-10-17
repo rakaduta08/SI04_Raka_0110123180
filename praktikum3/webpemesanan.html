@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Form Pemesanan Barang</title> 
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 300px;
+        }
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      </style>
+</head> 
+<body> 
+     
+    <div class="row">
+        <div class="column" ; width:35%">
+            <img src="gambar jam.jpg.jpg"width="500px" border="6"
+            <form action="hasil_barang.html" method="POST" enctype="multipart/form-data"></form> 
+            <br><input type="submit" value="Upload Picture"> 
+        </div> 
+        <div class="column" width:65%">
+            <table> 
+            <tr> 
+                <td>Title Here : </td> 
+                <td><input type="text" name="title here"></td> 
+            <tr> 
+             
+            <tr> 
+                <td>Description :</td> 
+                <td><textarea name="description" id="description" cols="30" rows="4"></textarea></td> 
+            </tr> 
+            <tr> 
+                <td>Account Number :</td> 
+                <td><input type="text" name=" account number"></td> 
+            <tr> 
+                <tr> 
+                    <td><label>Bank :</label></td> 
+                    <td>  
+                        <select id="Bank"> 
+                            <option value="bri">BRI</option> 
+                            <option value="bca">BCA</option> 
+                            <option value="mandiri">MANDIRI</option> 
+                        </select> 
+                    </td> 
+                </tr> 
+            <tr> 
+                <td>Account Holder :</td> 
+                <td><input type="text" name="accountholder"></td> 
+            </tr> 
+            <tr> 
+                <td><labe>Transaction :</label></td> 
+                <td>  
+                    <select id="Transaction"> 
+                        <option value="1">1</option> 
+                        <option value="2">2</option> 
+                        <option value="3">3</option> 
+                    </select> 
+                </td> 
+            </tr> 
+            <th> 
+                <p><td style="text-align: center;">*if the transaction is for 3 person, choose 3 from the drop-down list</td></p> 
+            </th> 
+            <tr> 
+                <td> 
+                    <input type="checkbox" name="transaction" value="send to mobile phone"> 
+                    <label for="transaction"> Send to Mobile Phone</label><br> 
+                    <input type="checkbox" name="transaction" value="send to email"> 
+                    <label for="transaction"> Send to Email</label><br> 
+                </td> 
+            </tr> 
+            <tr> 
+                <td>Send to Mobile Phone :</td> 
+                <td><input type="mumber" name="phone"></td> 
+            <tr> 
+            <tr> 
+                <td><label>Send to Email :</label></td> 
+                <td><input type="email" name="email"></td> 
+            </tr> 
+            <tr align="center"> 
+             <td><input type="submit" value="Generate Nabr Link" name="tombol"></td> 
+            </tr> 
+        </table> 
+    </div> 
+</body> 
+</html>
