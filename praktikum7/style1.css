@@ -1,0 +1,70 @@
+header{
+    display: flex;
+}
+
+footer{
+    background-color: blue;
+}
+
+.box1{
+    background-color: yellow;
+    float: left;
+    width: 20%;
+    height: 150px;
+    text-align: center;
+    margin: 5px;    
+
+}
+
+.box2{
+    background-color: orange;
+    float: left;
+    width: 80%;
+    height: 150px;
+    text-align: center;
+    margin: 5px;    
+
+}
+
+.main{
+    display: flex;
+ }
+
+.box3{
+    background-color: green;
+    float: left;
+    width: 20%;
+    height: 420px;
+    text-align: center;
+    margin: 5px;    
+
+}
+
+.box4{
+    background-color: gray;
+    float: left;
+    width: 60%;
+    height: 420px;
+    text-align: center;
+    margin: 5px;    
+
+}
+
+.box5{
+    background-color: cadetblue;
+    float: left;
+    width: 20%;
+    height: 420px;
+    text-align: center;
+    margin: 5px;    
+
+}
+
+.box6{
+    background-color: rgb(255, 0, 0);
+    height: 150px;
+    float: left;
+    width: 100%;  
+    text-align: center;
+    margin: 5px;    
+}
