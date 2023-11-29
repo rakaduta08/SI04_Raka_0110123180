@@ -1,0 +1,55 @@
+body {
+    background-color: lightpink;
+}
+
+.content {
+    display: flex;
+}
+
+
+
+header {
+    background-color: cadetblue;
+    margin: 20px;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.aside {
+    background-color: lightskyblue;
+    width: 25%;
+    height: 78vh;
+    text-align: center;
+    margin: 20px;
+    padding: 0.5em;
+}
+
+.article {
+    background-color: lightcoral;
+    width: 75%;
+    height: 78vh;
+    text-align: center;
+    margin: 20px;
+    padding: 0.5em;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    width: 23%;
+    padding: 20px;
+}
+
+.footer {
+    background-color: cadetblue;
+    margin: 20px;
+    padding: 0.5em;
+    text-align: center;
+
+}
+

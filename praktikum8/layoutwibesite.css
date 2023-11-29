@@ -1,0 +1,30 @@
+*{
+    margin:0;
+}
+  header,article,aside,nav,footer{
+    padding: 15px;
+  }
+
+  .content{
+    display:flex;
+    height: 80vh;
+  }
+   
+header{
+    background-color: blueviolet;
+}
+article {
+    background-color: blue;
+    width: 50%;
+}
+aside {
+    background-color: darkorange;
+    width: 25%;
+}
+nav {
+    background-color: deeppink;
+    width: 25%;
+}
+footer{
+    background-color: chartreuse;
+}
