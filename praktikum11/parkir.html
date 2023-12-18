@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Hitung_Biaya(){
+        
+            const per2jam = 3000;
+            const sejam  = 1000;
+      
+            let masuk   = document.getElementById("Masuk").value;
+            let keluar  = document.getElementById("Keluar").value;
+            let selisih = keluar - masuk;
+            let biaya = 0;
+      
+            if(selisih <= 2 ){
+               biaya = per2jam;
+      
+             } else{
+                jam_tabahan = selisih - 2  ;
+                biaya = per2jam + (sejam * jam_tabahan);
+             
+            }
+      
+             let _hasil = document.getElementById("Hasil")
+             _hasil.innerHTML = biaya;
+             
+                  
+      
+              }
+      
+    </script>
+</head>
+<body>
+    <h1>Menghitung  Angka parkir</h1>
+
+    Jam Masuk   :
+    <input type="number" id="Masuk">
+    <br>
+
+    Jam Keluar  :
+    <input type="number" id="Keluar">
+    <br>
+    <br>
+
+    <button onclick="Hitung_Biaya()">Hitung Biaya Parkir</button>
+    <br>
+
+    <h2>Biaya parkir Yang Harus Dibayar</h2>
+    <span id="Hasil">
+    </span>
+    <hr>
+</body>
+</html>
