@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=k, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function Image_Picker(){
+        const Daftar_Gambar = ["bison.png","monyet.png","serigala.png","singa.png"];
+        let Pilihan = document.getElementById("option").value;
+
+        
+        
+ 
+        if(Pilihan == "bison"){
+            let select = Daftar_Gambar[0];
+            document.getElementById("Gambar").src = `images/${select}`;
+
+        }
+
+        if(Pilihan == "monyet"){
+            let select = Daftar_Gambar[1];
+            document.getElementById("Gambar").src = `images/${select}`;
+
+
+        }
+
+        if(Pilihan == "serigala"){
+            let select = Daftar_Gambar[2];
+            document.getElementById("Gambar").src = `images/${select}`;
+
+
+        }
+
+        if(Pilihan == "singa"){
+            let select = Daftar_Gambar[3];
+            document.getElementById("Gambar").src = `images/${select}`;
+
+
+        }
+
+      }
+      
+    </script>
+</head>
+<body>
+    <h1>Image Picker</h1>
+
+
+    <select name="" id="option" onchange="Image_Picker()">
+        <option value="">Pilih Gambar</option>
+        <option value="bison">Bison</option>
+        <option value="monyet">Monyet</option>
+        <option value="serigala">Serigala</option>
+        <option value="singa">Singa</option>
+    </select>
+
+        <div class="container">
+            <br>
+            <img id="Gambar" width="250px">
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <script src="cek.js" defer></script>
+</head>
+
+<body>
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="submit" value="Login">
+  </form>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Data yang diharapkan
+      var expectedUsername = 'ahmad2017';
+      var expectedPassword = 'integrity';
+
+      // Mendapatkan nilai dari form
+      var enteredUsername = document.getElementById('username').value;
+      var enteredPassword = document.getElementById('password').value;
+
+      // Periksa apakah nilai sesuai
+      if (enteredUsername === expectedUsername && enteredPassword === expectedPassword) {
+        alert('Login Sukses');
+
+        window.location.href = "berhasillogin.hmtl"; // Arahkan ke halaman baru
+      } else {
+        alert('Login Gagal');
+      }
+    });
+  </script>
+</body>
+
+</html>
